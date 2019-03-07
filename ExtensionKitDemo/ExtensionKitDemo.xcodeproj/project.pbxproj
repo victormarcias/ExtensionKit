@@ -20,6 +20,8 @@
 		0400BA582231B5270063D355 /* Int+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA562231B5270063D355 /* Int+Time.swift */; };
 		0400BA5B2231BF9D0063D355 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA5A2231BF9D0063D355 /* UIView+Frame.swift */; };
 		0400BA5C2231BF9D0063D355 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA5A2231BF9D0063D355 /* UIView+Frame.swift */; };
+		0400BA5F2231D8350063D355 /* String+md5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA5E2231D8350063D355 /* String+md5.swift */; };
+		0400BA602231D8350063D355 /* String+md5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA5E2231D8350063D355 /* String+md5.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,7 @@
 		0400BA522231ADC30063D355 /* UIEdgeInsets+Sugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Sugar.swift"; sourceTree = "<group>"; };
 		0400BA562231B5270063D355 /* Int+Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Time.swift"; sourceTree = "<group>"; };
 		0400BA5A2231BF9D0063D355 /* UIView+Frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
+		0400BA5E2231D8350063D355 /* String+md5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+md5.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,7 @@
 		0400BA4B2231AC590063D355 /* ExtensionKit */ = {
 			isa = PBXGroup;
 			children = (
+				0400BA5D2231D8260063D355 /* Data */,
 				0400BA552231B5170063D355 /* Math */,
 				0400BA4C2231AC590063D355 /* UIKit */,
 			);
@@ -156,6 +160,14 @@
 				0400BA5A2231BF9D0063D355 /* UIView+Frame.swift */,
 			);
 			path = UIView;
+			sourceTree = "<group>";
+		};
+		0400BA5D2231D8260063D355 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0400BA5E2231D8350063D355 /* String+md5.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0400BA4F2231AC590063D355 /* UICollectionView+Reusable.swift in Sources */,
+				0400BA5F2231D8350063D355 /* String+md5.swift in Sources */,
 				0400BA532231ADC30063D355 /* UIEdgeInsets+Sugar.swift in Sources */,
 				0400BA572231B5270063D355 /* Int+Time.swift in Sources */,
 				0400BA25223195540063D355 /* ViewController.swift in Sources */,
@@ -276,6 +289,7 @@
 				0400BA5C2231BF9D0063D355 /* UIView+Frame.swift in Sources */,
 				0400BA582231B5270063D355 /* Int+Time.swift in Sources */,
 				0400BA502231AC590063D355 /* UICollectionView+Reusable.swift in Sources */,
+				0400BA602231D8350063D355 /* String+md5.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
