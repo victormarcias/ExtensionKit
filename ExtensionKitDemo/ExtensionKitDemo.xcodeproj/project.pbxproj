@@ -16,6 +16,8 @@
 		0400BA502231AC590063D355 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA4E2231AC590063D355 /* UICollectionView+Reusable.swift */; };
 		0400BA532231ADC30063D355 /* UIEdgeInsets+Sugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA522231ADC30063D355 /* UIEdgeInsets+Sugar.swift */; };
 		0400BA542231ADC30063D355 /* UIEdgeInsets+Sugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA522231ADC30063D355 /* UIEdgeInsets+Sugar.swift */; };
+		0400BA572231B5270063D355 /* Int+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA562231B5270063D355 /* Int+Time.swift */; };
+		0400BA582231B5270063D355 /* Int+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA562231B5270063D355 /* Int+Time.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,7 @@
 		0400BA39223195580063D355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0400BA4E2231AC590063D355 /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
 		0400BA522231ADC30063D355 /* UIEdgeInsets+Sugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Sugar.swift"; sourceTree = "<group>"; };
+		0400BA562231B5270063D355 /* Int+Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Time.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,7 @@
 		0400BA4B2231AC590063D355 /* ExtensionKit */ = {
 			isa = PBXGroup;
 			children = (
+				0400BA552231B5170063D355 /* Math */,
 				0400BA4C2231AC590063D355 /* UIKit */,
 			);
 			name = ExtensionKit;
@@ -132,6 +136,14 @@
 				0400BA522231ADC30063D355 /* UIEdgeInsets+Sugar.swift */,
 			);
 			path = UIEdgeInsets;
+			sourceTree = "<group>";
+		};
+		0400BA552231B5170063D355 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				0400BA562231B5270063D355 /* Int+Time.swift */,
+			);
+			path = Math;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +248,7 @@
 			files = (
 				0400BA4F2231AC590063D355 /* UICollectionView+Reusable.swift in Sources */,
 				0400BA532231ADC30063D355 /* UIEdgeInsets+Sugar.swift in Sources */,
+				0400BA572231B5270063D355 /* Int+Time.swift in Sources */,
 				0400BA25223195540063D355 /* ViewController.swift in Sources */,
 				0400BA23223195540063D355 /* AppDelegate.swift in Sources */,
 			);
@@ -247,6 +260,7 @@
 			files = (
 				0400BA38223195580063D355 /* ExtensionKitDemoTests.swift in Sources */,
 				0400BA542231ADC30063D355 /* UIEdgeInsets+Sugar.swift in Sources */,
+				0400BA582231B5270063D355 /* Int+Time.swift in Sources */,
 				0400BA502231AC590063D355 /* UICollectionView+Reusable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
