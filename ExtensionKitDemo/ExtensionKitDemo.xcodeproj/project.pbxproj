@@ -14,6 +14,8 @@
 		0400BA38223195580063D355 /* ExtensionKitDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA37223195580063D355 /* ExtensionKitDemoTests.swift */; };
 		0400BA4F2231AC590063D355 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA4E2231AC590063D355 /* UICollectionView+Reusable.swift */; };
 		0400BA502231AC590063D355 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA4E2231AC590063D355 /* UICollectionView+Reusable.swift */; };
+		0400BA532231ADC30063D355 /* UIEdgeInsets+Sugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA522231ADC30063D355 /* UIEdgeInsets+Sugar.swift */; };
+		0400BA542231ADC30063D355 /* UIEdgeInsets+Sugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA522231ADC30063D355 /* UIEdgeInsets+Sugar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,7 @@
 		0400BA37223195580063D355 /* ExtensionKitDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionKitDemoTests.swift; sourceTree = "<group>"; };
 		0400BA39223195580063D355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0400BA4E2231AC590063D355 /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
+		0400BA522231ADC30063D355 /* UIEdgeInsets+Sugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Sugar.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,7 @@
 		0400BA4C2231AC590063D355 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				0400BA512231AD020063D355 /* UIEdgeInsets */,
 				0400BA4D2231AC590063D355 /* UICollectionView */,
 			);
 			path = UIKit;
@@ -120,6 +124,14 @@
 				0400BA4E2231AC590063D355 /* UICollectionView+Reusable.swift */,
 			);
 			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		0400BA512231AD020063D355 /* UIEdgeInsets */ = {
+			isa = PBXGroup;
+			children = (
+				0400BA522231ADC30063D355 /* UIEdgeInsets+Sugar.swift */,
+			);
+			path = UIEdgeInsets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0400BA4F2231AC590063D355 /* UICollectionView+Reusable.swift in Sources */,
+				0400BA532231ADC30063D355 /* UIEdgeInsets+Sugar.swift in Sources */,
 				0400BA25223195540063D355 /* ViewController.swift in Sources */,
 				0400BA23223195540063D355 /* AppDelegate.swift in Sources */,
 			);
@@ -233,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0400BA38223195580063D355 /* ExtensionKitDemoTests.swift in Sources */,
+				0400BA542231ADC30063D355 /* UIEdgeInsets+Sugar.swift in Sources */,
 				0400BA502231AC590063D355 /* UICollectionView+Reusable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
