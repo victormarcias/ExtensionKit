@@ -12,8 +12,8 @@
 		0400BA2A223195570063D355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0400BA29223195570063D355 /* Assets.xcassets */; };
 		0400BA2D223195570063D355 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0400BA2B223195570063D355 /* LaunchScreen.storyboard */; };
 		0400BA38223195580063D355 /* ExtensionKitDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA37223195580063D355 /* ExtensionKitDemoTests.swift */; };
-		0400BA4622319DAB0063D355 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA4522319DAB0063D355 /* UICollectionView+Reusable.swift */; };
-		0400BA4722319DAB0063D355 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA4522319DAB0063D355 /* UICollectionView+Reusable.swift */; };
+		0400BA4F2231AC590063D355 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA4E2231AC590063D355 /* UICollectionView+Reusable.swift */; };
+		0400BA502231AC590063D355 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA4E2231AC590063D355 /* UICollectionView+Reusable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,7 @@
 		0400BA33223195580063D355 /* ExtensionKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtensionKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0400BA37223195580063D355 /* ExtensionKitDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionKitDemoTests.swift; sourceTree = "<group>"; };
 		0400BA39223195580063D355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0400BA4522319DAB0063D355 /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
+		0400BA4E2231AC590063D355 /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 		0400BA16223195540063D355 = {
 			isa = PBXGroup;
 			children = (
-				0400BA4222319AE20063D355 /* ExtensionKit */,
+				0400BA4B2231AC590063D355 /* ExtensionKit */,
 				0400BA21223195540063D355 /* ExtensionKitDemo */,
 				0400BA36223195580063D355 /* ExtensionKitDemoTests */,
 				0400BA20223195540063D355 /* Products */,
@@ -97,26 +97,27 @@
 			path = ExtensionKitDemoTests;
 			sourceTree = "<group>";
 		};
-		0400BA4222319AE20063D355 /* ExtensionKit */ = {
+		0400BA4B2231AC590063D355 /* ExtensionKit */ = {
 			isa = PBXGroup;
 			children = (
-				0400BA4322319AEB0063D355 /* UIKit */,
+				0400BA4C2231AC590063D355 /* UIKit */,
 			);
-			path = ExtensionKit;
+			name = ExtensionKit;
+			path = ../ExtensionKit;
 			sourceTree = "<group>";
 		};
-		0400BA4322319AEB0063D355 /* UIKit */ = {
+		0400BA4C2231AC590063D355 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				0400BA4422319D250063D355 /* UICollectionView */,
+				0400BA4D2231AC590063D355 /* UICollectionView */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
 		};
-		0400BA4422319D250063D355 /* UICollectionView */ = {
+		0400BA4D2231AC590063D355 /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				0400BA4522319DAB0063D355 /* UICollectionView+Reusable.swift */,
+				0400BA4E2231AC590063D355 /* UICollectionView+Reusable.swift */,
 			);
 			path = UICollectionView;
 			sourceTree = "<group>";
@@ -221,7 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0400BA4622319DAB0063D355 /* UICollectionView+Reusable.swift in Sources */,
+				0400BA4F2231AC590063D355 /* UICollectionView+Reusable.swift in Sources */,
 				0400BA25223195540063D355 /* ViewController.swift in Sources */,
 				0400BA23223195540063D355 /* AppDelegate.swift in Sources */,
 			);
@@ -232,7 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0400BA38223195580063D355 /* ExtensionKitDemoTests.swift in Sources */,
-				0400BA4722319DAB0063D355 /* UICollectionView+Reusable.swift in Sources */,
+				0400BA502231AC590063D355 /* UICollectionView+Reusable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
