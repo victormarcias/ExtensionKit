@@ -10,8 +10,8 @@ import UIKit
 
 extension UIView {
     
-    /// - Code gets hard to read really fast when you add/substract sizes/positions
-    /// so these shortcuts might help make it cleaner.
+    // - Motivation: Code gets hard to read exponentially with the increase in number of views
+    // involved in adding/substracting sizes/positions operations, so these might help make it cleaner.
     
     ///
     /// Shortcut to X position (relative to its parent)
@@ -30,7 +30,7 @@ extension UIView {
     }
     
     ///
-    /// Position tuple setter
+    /// Position tuple setter/getter
     ///
     var position: (x: CGFloat, y: CGFloat) {
         set { frame.origin = CGPoint(x: newValue.x, y: newValue.y) }
@@ -54,7 +54,7 @@ extension UIView {
     }
     
     ///
-    /// Size tuple setter
+    /// Size tuple setter/getter
     ///
     var size: (w: CGFloat, h: CGFloat) {
         set { frame.size = CGSize(width: newValue.w, height: newValue.h) }
@@ -75,6 +75,14 @@ extension UIView {
     var centerY: CGFloat {
         set { center = CGPoint(x: center.x, y: newValue) }
         get { return center.y }
+    }
+    
+    ///
+    /// Center tuple setter/getter
+    ///
+    var centerXY: (x: CGFloat, y: CGFloat) {
+        set { center = CGPoint(x: newValue.x, y: newValue.y) }
+        get { return (center.x, center.y) }
     }
     
     ///

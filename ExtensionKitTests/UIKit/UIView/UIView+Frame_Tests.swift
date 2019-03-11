@@ -43,12 +43,19 @@ class UIView_Frame_Tests: XCTestCase {
         
         // coordinate-style setters
         view3.position = (88, 33)
-        view3.size = (160, 90)
         XCTAssert(view3.frame.origin.x == 88)
         XCTAssert(view3.frame.origin.y == 33)
+        XCTAssert(view3.position.x == 88 && view3.position.y == 33)
+        
+        view3.size = (160, 90)
         XCTAssert(view3.frame.size.width == 160)
         XCTAssert(view3.frame.size.height == 90)
-        XCTAssert(view3.position == (88, 33))
-        XCTAssert(view3.size == (160, 90))
+        XCTAssert(view3.size.w == 160 && view3.size.h == 90)
+        
+        view3.centerXY = (55, 55)
+        XCTAssert(view3.center.x == 55)
+        XCTAssert(view3.frame.origin.x == -25)
+        XCTAssert(view3.frame.origin.y == 10)
+        XCTAssert(view3.centerX == 55 && view3.centerY == 55)
     }
 }
