@@ -30,6 +30,14 @@ extension UIView {
     }
     
     ///
+    /// Position tuple setter
+    ///
+    var position: (x: CGFloat, y: CGFloat) {
+        set { frame.origin = CGPoint(x: newValue.x, y: newValue.y) }
+        get { return (frame.origin.x, frame.origin.y) }
+    }
+    
+    ///
     /// Shortcut to the width of the view
     ///
     var width: CGFloat {
@@ -43,6 +51,14 @@ extension UIView {
     var height: CGFloat {
         set { frame.size.height = newValue }
         get { return frame.size.height }
+    }
+    
+    ///
+    /// Size tuple setter
+    ///
+    var size: (w: CGFloat, h: CGFloat) {
+        set { frame.size = CGSize(width: newValue.w, height: newValue.h) }
+        get { return (frame.size.width, frame.size.height) }
     }
     
     ///

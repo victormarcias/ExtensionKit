@@ -25,13 +25,30 @@ class UIView_Frame_Tests: XCTestCase {
         XCTAssert(view3.width == 100)
         XCTAssert(view3.height == 300)
         
+        XCTAssert(view3.frame.origin.x == 30)
+        XCTAssert(view3.frame.origin.y == 130)
+        XCTAssert(view3.frame.size.width == 100)
+        XCTAssert(view3.frame.size.height == 300)
+        
+        // center
         view3.center(on: view2)
         XCTAssert(view3.centerX == 50)
         XCTAssert(view3.centerY == 50)
+        XCTAssert(view3.center.x == 50)
+        XCTAssert(view3.center.y == 50)
         
         view3.centerX = 40
-        view3.setNeedsLayout()
         XCTAssert(view3.x == (view3.centerX - view3.width/2))
         XCTAssert(view3.x == -10)
+        
+        // coordinate-style setters
+        view3.position = (88, 33)
+        view3.size = (160, 90)
+        XCTAssert(view3.frame.origin.x == 88)
+        XCTAssert(view3.frame.origin.y == 33)
+        XCTAssert(view3.frame.size.width == 160)
+        XCTAssert(view3.frame.size.height == 90)
+        XCTAssert(view3.position == (88, 33))
+        XCTAssert(view3.size == (160, 90))
     }
 }
