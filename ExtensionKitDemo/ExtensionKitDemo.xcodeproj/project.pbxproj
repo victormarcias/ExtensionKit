@@ -19,10 +19,10 @@
 		0400BA582231B5270063D355 /* Int+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA562231B5270063D355 /* Int+Time.swift */; };
 		0400BA5B2231BF9D0063D355 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA5A2231BF9D0063D355 /* UIView+Frame.swift */; };
 		0400BA5C2231BF9D0063D355 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA5A2231BF9D0063D355 /* UIView+Frame.swift */; };
-		0400BA5F2231D8350063D355 /* String+md5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA5E2231D8350063D355 /* String+md5.swift */; };
-		0400BA602231D8350063D355 /* String+md5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA5E2231D8350063D355 /* String+md5.swift */; };
 		0450899A2236BDA1007F2DAA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 045089982236BDA1007F2DAA /* Info.plist */; };
 		0450899B2236BDB9007F2DAA /* UIView+Frame_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045089972236BDA1007F2DAA /* UIView+Frame_Tests.swift */; };
+		0450899D2236D6D2007F2DAA /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450899C2236D6D2007F2DAA /* String+Crypto.swift */; };
+		0450899E2236D6D2007F2DAA /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450899C2236D6D2007F2DAA /* String+Crypto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,9 +47,9 @@
 		0400BA522231ADC30063D355 /* UIEdgeInsets+Sugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Sugar.swift"; sourceTree = "<group>"; };
 		0400BA562231B5270063D355 /* Int+Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Time.swift"; sourceTree = "<group>"; };
 		0400BA5A2231BF9D0063D355 /* UIView+Frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
-		0400BA5E2231D8350063D355 /* String+md5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+md5.swift"; sourceTree = "<group>"; };
 		045089972236BDA1007F2DAA /* UIView+Frame_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame_Tests.swift"; sourceTree = "<group>"; };
 		045089982236BDA1007F2DAA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0450899C2236D6D2007F2DAA /* String+Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Crypto.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +104,7 @@
 		0400BA4B2231AC590063D355 /* ExtensionKit */ = {
 			isa = PBXGroup;
 			children = (
-				0400BA5D2231D8260063D355 /* Data */,
+				0400BA5D2231D8260063D355 /* Crypto */,
 				0400BA552231B5170063D355 /* Math */,
 				0400BA4C2231AC590063D355 /* UIKit */,
 			);
@@ -154,12 +154,12 @@
 			path = UIView;
 			sourceTree = "<group>";
 		};
-		0400BA5D2231D8260063D355 /* Data */ = {
+		0400BA5D2231D8260063D355 /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
-				0400BA5E2231D8350063D355 /* String+md5.swift */,
+				0450899C2236D6D2007F2DAA /* String+Crypto.swift */,
 			);
-			path = Data;
+			path = Crypto;
 			sourceTree = "<group>";
 		};
 		045089942236BDA1007F2DAA /* ExtensionKitTests */ = {
@@ -290,8 +290,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0400BA4F2231AC590063D355 /* UICollectionView+Reusable.swift in Sources */,
-				0400BA5F2231D8350063D355 /* String+md5.swift in Sources */,
 				0400BA532231ADC30063D355 /* UIEdgeInsets+Sugar.swift in Sources */,
+				0450899D2236D6D2007F2DAA /* String+Crypto.swift in Sources */,
 				0400BA572231B5270063D355 /* Int+Time.swift in Sources */,
 				0400BA25223195540063D355 /* ViewController.swift in Sources */,
 				0400BA23223195540063D355 /* AppDelegate.swift in Sources */,
@@ -308,7 +308,7 @@
 				0400BA582231B5270063D355 /* Int+Time.swift in Sources */,
 				0400BA502231AC590063D355 /* UICollectionView+Reusable.swift in Sources */,
 				0450899B2236BDB9007F2DAA /* UIView+Frame_Tests.swift in Sources */,
-				0400BA602231D8350063D355 /* String+md5.swift in Sources */,
+				0450899E2236D6D2007F2DAA /* String+Crypto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
