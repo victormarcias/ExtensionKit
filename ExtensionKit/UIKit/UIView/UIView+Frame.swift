@@ -10,35 +10,55 @@ import UIKit
 
 extension UIView {
     
-    /// - Code gets hard to read really fast when you add/substract widths/heights/positions
+    /// - Code gets hard to read really fast when you add/substract sizes/positions
     /// so these shortcuts might help make it cleaner.
     
     ///
-    /// Returns the X position relative to its parent
+    /// Shortcut to X position (relative to its parent)
     ///
     var x: CGFloat {
-        return frame.origin.x
+        set { frame.origin.x = newValue }
+        get { return frame.origin.x }
     }
     
     ///
-    /// Returns the Y position relative to its parent
+    /// Shortcut to the Y position (relative to its parent)
     ///
     var y: CGFloat {
-        return frame.origin.y
+        set { frame.origin.y = newValue }
+        get { return frame.origin.y }
     }
     
     ///
-    /// Returns the width of the view
+    /// Shortcut to the width of the view
     ///
     var width: CGFloat {
-        return frame.size.width
+        set { frame.size.width = newValue }
+        get { return frame.size.width }
     }
     
     ///
-    /// Returns the height of the view
+    /// Shortcut to the height of the view
     ///
     var height: CGFloat {
-        return frame.size.height
+        set { frame.size.height = newValue }
+        get { return frame.size.height }
+    }
+    
+    ///
+    /// Shortcut to the horizontal center of the view (relative to its parent)
+    ///
+    var centerX: CGFloat {
+        set { center = CGPoint(x: newValue, y: center.y) }
+        get { return center.x }
+    }
+    
+    ///
+    /// Shortcut to the vertical center of the view (relative to its parent)
+    ///
+    var centerY: CGFloat {
+        set { center = CGPoint(x: center.x, y: newValue) }
+        get { return center.y }
     }
     
     ///
