@@ -71,7 +71,7 @@ extension Data {
     /// - Parameters:
     ///   - type: The type of hash to use.
     ///   - output: The type of hash output desired, defaults to .hex.
-    ///   - Returns: The requested hash output or nil if failure.
+    /// - Returns: The requested hash output or nil if failure.
     public func hashed(_ type: HashType, output: HashOutputType = .hex) -> String? {
         
         // setup data variable to hold hashed value
