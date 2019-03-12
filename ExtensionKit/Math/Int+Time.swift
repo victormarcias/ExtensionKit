@@ -10,17 +10,17 @@ import Foundation
 
 extension Int {
     
-    //
-    // Returns a clock formatted tuple assuming this Int value is in seconds
-    //
-    var clock: (hours: Int, minutes: Int, seconds: Int) {
+    /// Tuple with time format assuming this Int value is in seconds
+    ///
+    /// - Returns: the Int value as tuple in format of (hh:mm:ss)
+    var timeFormatted: (hours: Int, minutes: Int, seconds: Int) {
         return (self / 3600, (self % 3600) / 60, (self % 3600) % 60)
     }
     
-    //
-    // Returns days and time elapsed tuple assuming this Int value is in seconds
-    //
-    var daysClock: (days: Int, hours: Int, minutes: Int, seconds: Int) {
+    /// Tuple with time format including days assuming this Int value is in seconds
+    ///
+    /// - Returns: the Int value as tuple in format of (dd:hh:mm:ss)
+    var daysAndTimeFormatted: (days: Int, hours: Int, minutes: Int, seconds: Int) {
         return (self / 86400, (self % 86400) / 3600, (self % 3600) / 60, (self % 3600) % 60)
     }
 }

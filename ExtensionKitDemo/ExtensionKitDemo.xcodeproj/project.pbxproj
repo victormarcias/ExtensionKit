@@ -19,11 +19,11 @@
 		0400BA582231B5270063D355 /* Int+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA562231B5270063D355 /* Int+Time.swift */; };
 		0400BA5B2231BF9D0063D355 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA5A2231BF9D0063D355 /* UIView+Frame.swift */; };
 		0400BA5C2231BF9D0063D355 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA5A2231BF9D0063D355 /* UIView+Frame.swift */; };
-		0450899A2236BDA1007F2DAA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 045089982236BDA1007F2DAA /* Info.plist */; };
 		0450899B2236BDB9007F2DAA /* UIView+Frame_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045089972236BDA1007F2DAA /* UIView+Frame_Tests.swift */; };
 		0450899D2236D6D2007F2DAA /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450899C2236D6D2007F2DAA /* String+Crypto.swift */; };
 		0450899E2236D6D2007F2DAA /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450899C2236D6D2007F2DAA /* String+Crypto.swift */; };
 		045089A12236E7E5007F2DAA /* String+Crypto_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045089A02236E7E5007F2DAA /* String+Crypto_Tests.swift */; };
+		047748672238430600846F57 /* Int+Time_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047748662238430500846F57 /* Int+Time_Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,7 @@
 		0400BA29223195570063D355 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0400BA2C223195570063D355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0400BA2E223195570063D355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0400BA33223195580063D355 /* ExtensionKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtensionKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0400BA33223195580063D355 /* ExtensionKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtensionKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0400BA4E2231AC590063D355 /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
 		0400BA522231ADC30063D355 /* UIEdgeInsets+Sugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Sugar.swift"; sourceTree = "<group>"; };
 		0400BA562231B5270063D355 /* Int+Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Time.swift"; sourceTree = "<group>"; };
@@ -52,6 +52,7 @@
 		045089982236BDA1007F2DAA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0450899C2236D6D2007F2DAA /* String+Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Crypto.swift"; sourceTree = "<group>"; };
 		045089A02236E7E5007F2DAA /* String+Crypto_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Crypto_Tests.swift"; sourceTree = "<group>"; };
+		047748662238430500846F57 /* Int+Time_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Time_Tests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				0400BA1F223195540063D355 /* ExtensionKitDemo.app */,
-				0400BA33223195580063D355 /* ExtensionKitDemoTests.xctest */,
+				0400BA33223195580063D355 /* ExtensionKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,8 +169,9 @@
 			isa = PBXGroup;
 			children = (
 				0450899F2236E7C9007F2DAA /* Crypto */,
-				045089952236BDA1007F2DAA /* UIKit */,
 				045089982236BDA1007F2DAA /* Info.plist */,
+				04774865223842D000846F57 /* Math */,
+				045089952236BDA1007F2DAA /* UIKit */,
 			);
 			name = ExtensionKitTests;
 			path = ../ExtensionKitTests;
@@ -199,6 +201,14 @@
 			path = Crypto;
 			sourceTree = "<group>";
 		};
+		04774865223842D000846F57 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				047748662238430500846F57 /* Int+Time_Tests.swift */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -219,9 +229,9 @@
 			productReference = 0400BA1F223195540063D355 /* ExtensionKitDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0400BA32223195580063D355 /* ExtensionKitDemoTests */ = {
+		0400BA32223195580063D355 /* ExtensionKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0400BA3F223195580063D355 /* Build configuration list for PBXNativeTarget "ExtensionKitDemoTests" */;
+			buildConfigurationList = 0400BA3F223195580063D355 /* Build configuration list for PBXNativeTarget "ExtensionKitTests" */;
 			buildPhases = (
 				0400BA2F223195580063D355 /* Sources */,
 				0400BA30223195580063D355 /* Frameworks */,
@@ -232,9 +242,9 @@
 			dependencies = (
 				0400BA35223195580063D355 /* PBXTargetDependency */,
 			);
-			name = ExtensionKitDemoTests;
+			name = ExtensionKitTests;
 			productName = ExtensionKitDemoTests;
-			productReference = 0400BA33223195580063D355 /* ExtensionKitDemoTests.xctest */;
+			productReference = 0400BA33223195580063D355 /* ExtensionKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -270,7 +280,7 @@
 			projectRoot = "";
 			targets = (
 				0400BA1E223195540063D355 /* ExtensionKitDemo */,
-				0400BA32223195580063D355 /* ExtensionKitDemoTests */,
+				0400BA32223195580063D355 /* ExtensionKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -282,7 +292,6 @@
 			files = (
 				0400BA2D223195570063D355 /* LaunchScreen.storyboard in Resources */,
 				0400BA2A223195570063D355 /* Assets.xcassets in Resources */,
-				0450899A2236BDA1007F2DAA /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +329,7 @@
 				0400BA582231B5270063D355 /* Int+Time.swift in Sources */,
 				0400BA502231AC590063D355 /* UICollectionView+Reusable.swift in Sources */,
 				0450899B2236BDB9007F2DAA /* UIView+Frame_Tests.swift in Sources */,
+				047748672238430600846F57 /* Int+Time_Tests.swift in Sources */,
 				0450899E2236D6D2007F2DAA /* String+Crypto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,6 +518,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ../ExtensionKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -528,6 +539,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ../ExtensionKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -563,7 +575,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0400BA3F223195580063D355 /* Build configuration list for PBXNativeTarget "ExtensionKitDemoTests" */ = {
+		0400BA3F223195580063D355 /* Build configuration list for PBXNativeTarget "ExtensionKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0400BA40223195580063D355 /* Debug */,
