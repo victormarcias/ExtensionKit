@@ -24,6 +24,7 @@
 		0450899E2236D6D2007F2DAA /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450899C2236D6D2007F2DAA /* String+Crypto.swift */; };
 		045089A12236E7E5007F2DAA /* String+Crypto_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045089A02236E7E5007F2DAA /* String+Crypto_Tests.swift */; };
 		045F1F5B223ADF0E0087B804 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F1F5A223ADF0E0087B804 /* UITableView+Reusable.swift */; };
+		045F1F60223AE4C90087B804 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F1F5A223ADF0E0087B804 /* UITableView+Reusable.swift */; };
 		047748672238430600846F57 /* Int+Time_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047748662238430500846F57 /* Int+Time_Tests.swift */; };
 /* End PBXBuildFile section */
 
@@ -171,8 +172,8 @@
 		045089942236BDA1007F2DAA /* ExtensionKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				045F1F5C223AE4510087B804 /* Configuration */,
 				0450899F2236E7C9007F2DAA /* Crypto */,
-				045089982236BDA1007F2DAA /* Info.plist */,
 				04774865223842D000846F57 /* Math */,
 				045089952236BDA1007F2DAA /* UIKit */,
 			);
@@ -210,6 +211,14 @@
 				045F1F5A223ADF0E0087B804 /* UITableView+Reusable.swift */,
 			);
 			path = UITableView;
+			sourceTree = "<group>";
+		};
+		045F1F5C223AE4510087B804 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				045089982236BDA1007F2DAA /* Info.plist */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 		04774865223842D000846F57 /* Math */ = {
@@ -335,6 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045F1F60223AE4C90087B804 /* UITableView+Reusable.swift in Sources */,
 				045089A12236E7E5007F2DAA /* String+Crypto_Tests.swift in Sources */,
 				0400BA542231ADC30063D355 /* UIEdgeInsets+Sugar.swift in Sources */,
 				0400BA5C2231BF9D0063D355 /* UIView+Frame.swift in Sources */,
@@ -531,7 +541,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = ../ExtensionKitTests/Info.plist;
+				INFOPLIST_FILE = ../ExtensionKitTests/Configuration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -552,7 +562,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = ../ExtensionKitTests/Info.plist;
+				INFOPLIST_FILE = ../ExtensionKitTests/Configuration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
