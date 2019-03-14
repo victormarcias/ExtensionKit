@@ -121,28 +121,12 @@
 		0400BA4C2231AC590063D355 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				0400BA4D2231AC590063D355 /* UICollectionView */,
-				0400BA512231AD020063D355 /* UIEdgeInsets */,
-				045F1F59223ADEFB0087B804 /* UITableView */,
-				0400BA592231BEE20063D355 /* UIView */,
+				0400BA4E2231AC590063D355 /* UICollectionView+Reusable.swift */,
+				0400BA522231ADC30063D355 /* UIEdgeInsets+Sugar.swift */,
+				045F1F5A223ADF0E0087B804 /* UITableView+Reusable.swift */,
+				0400BA5A2231BF9D0063D355 /* UIView+Frame.swift */,
 			);
 			path = UIKit;
-			sourceTree = "<group>";
-		};
-		0400BA4D2231AC590063D355 /* UICollectionView */ = {
-			isa = PBXGroup;
-			children = (
-				0400BA4E2231AC590063D355 /* UICollectionView+Reusable.swift */,
-			);
-			path = UICollectionView;
-			sourceTree = "<group>";
-		};
-		0400BA512231AD020063D355 /* UIEdgeInsets */ = {
-			isa = PBXGroup;
-			children = (
-				0400BA522231ADC30063D355 /* UIEdgeInsets+Sugar.swift */,
-			);
-			path = UIEdgeInsets;
 			sourceTree = "<group>";
 		};
 		0400BA552231B5170063D355 /* Math */ = {
@@ -151,14 +135,6 @@
 				0400BA562231B5270063D355 /* Int+Time.swift */,
 			);
 			path = Math;
-			sourceTree = "<group>";
-		};
-		0400BA592231BEE20063D355 /* UIView */ = {
-			isa = PBXGroup;
-			children = (
-				0400BA5A2231BF9D0063D355 /* UIView+Frame.swift */,
-			);
-			path = UIView;
 			sourceTree = "<group>";
 		};
 		0400BA5D2231D8260063D355 /* Crypto */ = {
@@ -184,17 +160,9 @@
 		045089952236BDA1007F2DAA /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				045089962236BDA1007F2DAA /* UIView */,
-			);
-			path = UIKit;
-			sourceTree = "<group>";
-		};
-		045089962236BDA1007F2DAA /* UIView */ = {
-			isa = PBXGroup;
-			children = (
 				045089972236BDA1007F2DAA /* UIView+Frame_Tests.swift */,
 			);
-			path = UIView;
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		0450899F2236E7C9007F2DAA /* Crypto */ = {
@@ -203,14 +171,6 @@
 				045089A02236E7E5007F2DAA /* String+Crypto_Tests.swift */,
 			);
 			path = Crypto;
-			sourceTree = "<group>";
-		};
-		045F1F59223ADEFB0087B804 /* UITableView */ = {
-			isa = PBXGroup;
-			children = (
-				045F1F5A223ADF0E0087B804 /* UITableView+Reusable.swift */,
-			);
-			path = UITableView;
 			sourceTree = "<group>";
 		};
 		045F1F5C223AE4510087B804 /* Configuration */ = {
