@@ -23,6 +23,7 @@
 		0450899D2236D6D2007F2DAA /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450899C2236D6D2007F2DAA /* String+Crypto.swift */; };
 		0450899E2236D6D2007F2DAA /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450899C2236D6D2007F2DAA /* String+Crypto.swift */; };
 		045089A12236E7E5007F2DAA /* String+Crypto_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045089A02236E7E5007F2DAA /* String+Crypto_Tests.swift */; };
+		045F1F5B223ADF0E0087B804 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F1F5A223ADF0E0087B804 /* UITableView+Reusable.swift */; };
 		047748672238430600846F57 /* Int+Time_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047748662238430500846F57 /* Int+Time_Tests.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		045089982236BDA1007F2DAA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0450899C2236D6D2007F2DAA /* String+Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Crypto.swift"; sourceTree = "<group>"; };
 		045089A02236E7E5007F2DAA /* String+Crypto_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Crypto_Tests.swift"; sourceTree = "<group>"; };
+		045F1F5A223ADF0E0087B804 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
 		047748662238430500846F57 /* Int+Time_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Time_Tests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,9 +120,10 @@
 		0400BA4C2231AC590063D355 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				0400BA592231BEE20063D355 /* UIView */,
-				0400BA512231AD020063D355 /* UIEdgeInsets */,
 				0400BA4D2231AC590063D355 /* UICollectionView */,
+				0400BA512231AD020063D355 /* UIEdgeInsets */,
+				045F1F59223ADEFB0087B804 /* UITableView */,
+				0400BA592231BEE20063D355 /* UIView */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -199,6 +202,14 @@
 				045089A02236E7E5007F2DAA /* String+Crypto_Tests.swift */,
 			);
 			path = Crypto;
+			sourceTree = "<group>";
+		};
+		045F1F59223ADEFB0087B804 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				045F1F5A223ADF0E0087B804 /* UITableView+Reusable.swift */,
+			);
+			path = UITableView;
 			sourceTree = "<group>";
 		};
 		04774865223842D000846F57 /* Math */ = {
@@ -311,6 +322,7 @@
 			files = (
 				0400BA4F2231AC590063D355 /* UICollectionView+Reusable.swift in Sources */,
 				0400BA532231ADC30063D355 /* UIEdgeInsets+Sugar.swift in Sources */,
+				045F1F5B223ADF0E0087B804 /* UITableView+Reusable.swift in Sources */,
 				0450899D2236D6D2007F2DAA /* String+Crypto.swift in Sources */,
 				0400BA572231B5270063D355 /* Int+Time.swift in Sources */,
 				0400BA25223195540063D355 /* ViewController.swift in Sources */,
