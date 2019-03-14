@@ -1,6 +1,6 @@
 //
 //  UITableView+Reusable.swift
-//  ExtensionKitDemo
+//  ExtensionKit
 //
 //  Created by Victor Marcias on 2019-03-14.
 //  Copyright © 2019 Victor Marcias. All rights reserved.
