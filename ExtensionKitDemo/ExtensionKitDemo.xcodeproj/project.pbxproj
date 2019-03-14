@@ -25,6 +25,7 @@
 		045089A12236E7E5007F2DAA /* String+Crypto_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045089A02236E7E5007F2DAA /* String+Crypto_Tests.swift */; };
 		045F1F5B223ADF0E0087B804 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F1F5A223ADF0E0087B804 /* UITableView+Reusable.swift */; };
 		045F1F60223AE4C90087B804 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F1F5A223ADF0E0087B804 /* UITableView+Reusable.swift */; };
+		045F1F62223AF6CD0087B804 /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F1F61223AF6CD0087B804 /* UIImage+Resize.swift */; };
 		047748672238430600846F57 /* Int+Time_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047748662238430500846F57 /* Int+Time_Tests.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		0450899C2236D6D2007F2DAA /* String+Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Crypto.swift"; sourceTree = "<group>"; };
 		045089A02236E7E5007F2DAA /* String+Crypto_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Crypto_Tests.swift"; sourceTree = "<group>"; };
 		045F1F5A223ADF0E0087B804 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		045F1F61223AF6CD0087B804 /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
 		047748662238430500846F57 /* Int+Time_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Time_Tests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +125,7 @@
 			children = (
 				0400BA4E2231AC590063D355 /* UICollectionView+Reusable.swift */,
 				0400BA522231ADC30063D355 /* UIEdgeInsets+Sugar.swift */,
+				045F1F61223AF6CD0087B804 /* UIImage+Resize.swift */,
 				045F1F5A223ADF0E0087B804 /* UITableView+Reusable.swift */,
 				0400BA5A2231BF9D0063D355 /* UIView+Frame.swift */,
 			);
@@ -294,6 +297,7 @@
 				045F1F5B223ADF0E0087B804 /* UITableView+Reusable.swift in Sources */,
 				0450899D2236D6D2007F2DAA /* String+Crypto.swift in Sources */,
 				0400BA572231B5270063D355 /* Int+Time.swift in Sources */,
+				045F1F62223AF6CD0087B804 /* UIImage+Resize.swift in Sources */,
 				0400BA25223195540063D355 /* ViewController.swift in Sources */,
 				0400BA23223195540063D355 /* AppDelegate.swift in Sources */,
 				0400BA5B2231BF9D0063D355 /* UIView+Frame.swift in Sources */,
