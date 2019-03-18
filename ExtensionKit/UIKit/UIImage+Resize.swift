@@ -13,7 +13,7 @@ extension UIImage {
     /// Resize an UIImage
     ///
     /// - Parameters:
-    ///   - newSize: the target size for the image
+    ///   - targetSize: the target size for the image
     ///   - keepAspect: keep aspect ratio of the image by default
     ///   - transparent: if the image has transparency (non pictures, eg: icons, etc)
     /// - Returns: a new instance with the resulting image
@@ -29,9 +29,10 @@ extension UIImage {
         if keepAspect {
             let scaleX = targetSize.width / self.size.width
             let scaleY = targetSize.height / self.size.height
+            let targetScale = min(scaleX, scaleY)
             // pick the smallest scale to fit the target size
-            let width = self.size.width * min(scaleX, scaleY)
-            let height = self.size.height * min(scaleX, scaleY)
+            let width = self.size.width * targetScale
+            let height = self.size.height * targetScale
             newSize = CGSize(width: width, height: height)
         }
         
