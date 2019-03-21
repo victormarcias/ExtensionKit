@@ -16,13 +16,13 @@ import Foundation
 /// https://www.google.com/search?q=unit+converter
 ///
 
-extension Double {
+struct EKTemperature {
     
-    enum TemperatureUnit {
+    enum Unit {
         case celsius, farenheit, kelvin
     }
     
-    enum TemperatureConverter {
+    enum Converter {
         case celsius(_ value: Double)
         case farenheit(_ value: Double)
         case kelvin(_ value: Double)
@@ -33,7 +33,7 @@ extension Double {
         ///     - conversionUnit: the resulting value's TemperatureUnit
         /// - Returns: the Double value converted to another temperature
         ///
-        func to(_ conversionUnit: TemperatureUnit) -> Double {
+        func to(_ conversionUnit: EKTemperature.Unit) -> Double {
             switch self {
             case .celsius(let value):
                 switch conversionUnit {
@@ -58,14 +58,17 @@ extension Double {
             }
         }
     }
+}
+
+extension Double {
     
-    /// This value measured in form of a operable TemperatureUnit.
-    ///     Usage: {Double}.degrees(.TemperatureUnit).to(.TemperatureUnit) -> Double
+    /// This value measured in form of a operable temperature unit.
+    ///     Usage: {Double}.degrees(.Unit).to(.Unit) -> Double
     ///
     /// - Parameters:
     ///     - unit: TemperatureUnit representing this Double value
     ///
-    func degrees(_ unit: TemperatureUnit) -> TemperatureConverter {
+    func degrees(_ unit: EKTemperature.Unit) -> EKTemperature.Converter {
         switch unit {
         case .celsius:      return .celsius(self)
         case .farenheit:    return .farenheit(self)

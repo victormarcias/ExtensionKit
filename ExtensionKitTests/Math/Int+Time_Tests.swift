@@ -1,6 +1,6 @@
 //
 //  Int+Time_Tests.swift
-//  ExtensionKitDemoTests
+//  ExtensionKitTests
 //
 //  Created by Victor Marcias on 2019-03-12.
 //  Copyright © 2019 Victor Marcias. All rights reserved.
