@@ -19,6 +19,8 @@
 		0400BA582231B5270063D355 /* Int+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA562231B5270063D355 /* Int+Time.swift */; };
 		0400BA5B2231BF9D0063D355 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA5A2231BF9D0063D355 /* UIView+Frame.swift */; };
 		0400BA5C2231BF9D0063D355 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA5A2231BF9D0063D355 /* UIView+Frame.swift */; };
+		04059E492243FB1A0063F5F9 /* Double+Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04059E482243FB1A0063F5F9 /* Double+Temperature.swift */; };
+		04059E4A2243FB1A0063F5F9 /* Double+Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04059E482243FB1A0063F5F9 /* Double+Temperature.swift */; };
 		0450899B2236BDB9007F2DAA /* UIView+Frame_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045089972236BDA1007F2DAA /* UIView+Frame_Tests.swift */; };
 		0450899D2236D6D2007F2DAA /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450899C2236D6D2007F2DAA /* String+Crypto.swift */; };
 		0450899E2236D6D2007F2DAA /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450899C2236D6D2007F2DAA /* String+Crypto.swift */; };
@@ -51,6 +53,7 @@
 		0400BA522231ADC30063D355 /* UIEdgeInsets+Sugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Sugar.swift"; sourceTree = "<group>"; };
 		0400BA562231B5270063D355 /* Int+Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Time.swift"; sourceTree = "<group>"; };
 		0400BA5A2231BF9D0063D355 /* UIView+Frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
+		04059E482243FB1A0063F5F9 /* Double+Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Temperature.swift"; sourceTree = "<group>"; };
 		045089972236BDA1007F2DAA /* UIView+Frame_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame_Tests.swift"; sourceTree = "<group>"; };
 		045089982236BDA1007F2DAA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0450899C2236D6D2007F2DAA /* String+Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Crypto.swift"; sourceTree = "<group>"; };
@@ -135,6 +138,7 @@
 		0400BA552231B5170063D355 /* Math */ = {
 			isa = PBXGroup;
 			children = (
+				04059E472243FB000063F5F9 /* Unit Conversion */,
 				0400BA562231B5270063D355 /* Int+Time.swift */,
 			);
 			path = Math;
@@ -146,6 +150,14 @@
 				0450899C2236D6D2007F2DAA /* String+Crypto.swift */,
 			);
 			path = Crypto;
+			sourceTree = "<group>";
+		};
+		04059E472243FB000063F5F9 /* Unit Conversion */ = {
+			isa = PBXGroup;
+			children = (
+				04059E482243FB1A0063F5F9 /* Double+Temperature.swift */,
+			);
+			path = "Unit Conversion";
 			sourceTree = "<group>";
 		};
 		045089942236BDA1007F2DAA /* ExtensionKitTests */ = {
@@ -295,6 +307,7 @@
 				0400BA4F2231AC590063D355 /* UICollectionView+Reusable.swift in Sources */,
 				0400BA532231ADC30063D355 /* UIEdgeInsets+Sugar.swift in Sources */,
 				045F1F5B223ADF0E0087B804 /* UITableView+Reusable.swift in Sources */,
+				04059E492243FB1A0063F5F9 /* Double+Temperature.swift in Sources */,
 				0450899D2236D6D2007F2DAA /* String+Crypto.swift in Sources */,
 				0400BA572231B5270063D355 /* Int+Time.swift in Sources */,
 				045F1F62223AF6CD0087B804 /* UIImage+Resize.swift in Sources */,
@@ -311,6 +324,7 @@
 				045F1F60223AE4C90087B804 /* UITableView+Reusable.swift in Sources */,
 				045089A12236E7E5007F2DAA /* String+Crypto_Tests.swift in Sources */,
 				0400BA542231ADC30063D355 /* UIEdgeInsets+Sugar.swift in Sources */,
+				04059E4A2243FB1A0063F5F9 /* Double+Temperature.swift in Sources */,
 				0400BA5C2231BF9D0063D355 /* UIView+Frame.swift in Sources */,
 				0400BA582231B5270063D355 /* Int+Time.swift in Sources */,
 				0400BA502231AC590063D355 /* UICollectionView+Reusable.swift in Sources */,
