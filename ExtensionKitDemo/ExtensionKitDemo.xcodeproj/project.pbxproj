@@ -32,6 +32,7 @@
 		045F1F60223AE4C90087B804 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F1F5A223ADF0E0087B804 /* UITableView+Reusable.swift */; };
 		045F1F62223AF6CD0087B804 /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F1F61223AF6CD0087B804 /* UIImage+Resize.swift */; };
 		047748672238430600846F57 /* Int+Time_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047748662238430500846F57 /* Int+Time_Tests.swift */; };
+		04C7CBC92245299E00B5A8DA /* Double+Length_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7CBC82245299E00B5A8DA /* Double+Length_Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		045F1F5A223ADF0E0087B804 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
 		045F1F61223AF6CD0087B804 /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
 		047748662238430500846F57 /* Int+Time_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Time_Tests.swift"; sourceTree = "<group>"; };
+		04C7CBC82245299E00B5A8DA /* Double+Length_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Length_Tests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 		04059E4B224412650063F5F9 /* Unit Conversion */ = {
 			isa = PBXGroup;
 			children = (
+				04C7CBC82245299E00B5A8DA /* Double+Length_Tests.swift */,
 				04059E4C224412800063F5F9 /* Double+Temperature_Tests.swift */,
 			);
 			path = "Unit Conversion";
@@ -337,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C7CBC92245299E00B5A8DA /* Double+Length_Tests.swift in Sources */,
 				04059E4E224412800063F5F9 /* Double+Temperature_Tests.swift in Sources */,
 				045F1F60223AE4C90087B804 /* UITableView+Reusable.swift in Sources */,
 				045089A12236E7E5007F2DAA /* String+Crypto_Tests.swift in Sources */,
