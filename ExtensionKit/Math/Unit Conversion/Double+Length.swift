@@ -8,113 +8,187 @@
 
 import Foundation
 
+///
+/// Note: from iOS 10+ Measurement structure can be used
+/// https://developer.apple.com/documentation/foundation/measurement
+///
+/// Written using Google's Unit Converter formulas:
+/// https://www.google.com/search?q=unit+converter
+///
+
 struct EKLength {
     
+    ///
+    /// How it works:
+    /// Basically the conversion is done at the smallest scale of each Unit.
+    /// In this case milimeters are converted to inches and viceversa and scaled up or down.
+    ///
+    /// Example (meter -> yard):
+    ///     50 meters * 0.0393700787(milimetersInInches) * 1000(mm) / 36 inches (1 yard) -> 54.6807 yards
+    ///
+    /// Example (meter -> km):
+    ///     500 meters * 1000(mm) / 1_000_000(mm) -> 0.5 Km
+    ///
+    
+    ///
+    /// UnitType: each one defined by the smallest and scaled up
+    ///
     enum UnitType {
         
         enum Metric: Double {
-            case milimeter = 1      // mm
-            case centimeter = 10    // mm
-            case meter = 1000       // mm
-            case kilometer = 1_000_000  // mm
-            
-            init(_ unitValue: UnitValue) {
-                switch unitValue {
-                case .milimeter(_):     self = .milimeter
-                case .centimeter(_):    self = .centimeter
-                case .meter(_):         self = .meter
-                case .kilometer(_):     self = .kilometer
-                default: self = .milimeter
-                }
-            }
+            case milimeters = 1         // mm
+            case centimeters = 10       // mm
+            case meters = 1000          // mm
+            case kilometers = 1_000_000 // mm
         }
         
         enum Imperial: Double {
-            case inch = 1   // inch
-            case foot = 12  // inch
-            case yard = 36  // inch
-            case mile = 63360.23622 // inch
-            
-            init(valueType: UnitValue) {
-                switch valueType {
-                case .inch(_):  self = .inch
-                case .foot(_):  self = .foot
-                case .yard(_):  self = .yard
-                case .mile(_):  self = .mile
-                default: self = .inch
-                }
-            }
+            case inches = 1     // inch
+            case feet = 12      // inches
+            case yards = 36     // inches
+            case miles = 63360  // inches
         }
     }
     
+    ///
+    /// UnitValue: the object that wraps the original Double value
+    ///
     enum UnitValue {
-        case milimeter(_ value: Double)
-        case centimeter(_ value: Double)
-        case meter(_ value: Double)
-        case kilometer(_ value: Double)
         
-        case inch(_ value: Double)
-        case foot(_ value: Double)
-        case yard(_ value: Double)
-        case mile(_ value: Double)
-        
-        func to(_ output: UnitType.Metric) -> Double {
-            switch self {
-            case .milimeter(let value),
-                 .centimeter(let value),
-                 .meter(let value),
-                 .kilometer(let value):
-                let input = UnitType.Metric(self)
-                return value * input.rawValue / output.rawValue
-                
-            case .inch(let value),
-                 .foot(let value),
-                 .yard(let value),
-                 .mile(let value):
-                let input = UnitType.Imperial(valueType: self)
-                let inchesInMilimeters = 25.4
-                return value * inchesInMilimeters * input.rawValue / output.rawValue
+        enum Metric {
+            case milimeter(_ value: Double)
+            case centimeter(_ value: Double)
+            case meter(_ value: Double)
+            case kilometer(_ value: Double)
+            
+            ///
+            /// Metric -> Metric
+            ///
+            func to(_ metric: UnitType.Metric) -> Double {
+                switch self {
+                case .milimeter(let value),
+                     .centimeter(let value),
+                     .meter(let value),
+                     .kilometer(let value):
+                    let type = self.unitType()
+                    return value * type.rawValue / metric.rawValue
+                }
+            }
+            
+            ///
+            /// Metric -> Imperial
+            ///
+            func to(_ imperial: UnitType.Imperial) -> Double {
+                switch self {
+                case .milimeter(let value),
+                     .centimeter(let value),
+                     .meter(let value),
+                     .kilometer(let value):
+                    let type = self.unitType()
+                    let milimetersInInches = 0.0393700787
+                    return value * milimetersInInches * type.rawValue / imperial.rawValue
+                }
+            }
+            
+            ///
+            /// Gets the UnitType from the UnitValue type
+            ///
+            private func unitType() -> UnitType.Metric {
+                switch self {
+                case .milimeter(_):     return .milimeters
+                case .centimeter(_):    return .centimeters
+                case .meter(_):         return .meters
+                case .kilometer(_):     return .kilometers
+                }
             }
         }
         
-        func to(_ output: UnitType.Imperial) -> Double {
-            switch self {
-            case .milimeter(let value),
-                 .centimeter(let value),
-                 .meter(let value),
-                 .kilometer(let value):
-                let input = UnitType.Metric(self)
-                let milimetersInInches = 0.0393700787
-                return value * milimetersInInches * input.rawValue / output.rawValue
-                
-            case .inch(let value),
-                 .foot(let value),
-                 .yard(let value),
-                 .mile(let value):
-                let input = UnitType.Imperial(valueType: self)
-                return value * input.rawValue / output.rawValue
+        enum Imperial {
+            case inch(_ value: Double)
+            case foot(_ value: Double)
+            case yard(_ value: Double)
+            case mile(_ value: Double)
+            
+            ///
+            /// Imperial -> Imperial
+            ///
+            func to(_ imperial: UnitType.Imperial) -> Double {
+                switch self {
+                case .inch(let value),
+                     .foot(let value),
+                     .yard(let value),
+                     .mile(let value):
+                    let type = self.unitType()
+                    return value * type.rawValue / imperial.rawValue
+                }
+            }
+            
+            ///
+            /// Imperial -> Metric
+            ///
+            func to(_ metric: UnitType.Metric) -> Double {
+                switch self {
+                case .inch(let value),
+                     .foot(let value),
+                     .yard(let value),
+                     .mile(let value):
+                    let type = self.unitType()
+                    let inchesInMilimeters = 25.4
+                    return value * inchesInMilimeters * type.rawValue / metric.rawValue
+                }
+            }
+            
+            ///
+            /// Gets the UnitType from the UnitValue type
+            ///
+            private func unitType() -> UnitType.Imperial {
+                switch self {
+                case .inch(_):  return .inches
+                case .foot(_):  return .feet
+                case .yard(_):  return .yards
+                case .mile(_):  return .miles
+                }
             }
         }
+        
     }
 }
 
 extension Double {
     
-    func units(_ unit: EKLength.UnitType.Metric) -> EKLength.UnitValue {
-        switch unit {
-        case .milimeter:    return .milimeter(self)
-        case .centimeter:   return .centimeter(self)
-        case .meter:        return .meter(self)
-        case .kilometer:    return .kilometer(self)
-        }
+    // MARK: - Metric values
+    
+    var milimeters: EKLength.UnitValue.Metric {
+        return .milimeter(self)
     }
     
-    func units(_ unit: EKLength.UnitType.Imperial) -> EKLength.UnitValue {
-        switch unit {
-        case .foot: return .foot(self)
-        case .inch: return .inch(self)
-        case .yard: return .yard(self)
-        case .mile: return .mile(self)
-        }
+    var centimeters: EKLength.UnitValue.Metric {
+        return .centimeter(self)
+    }
+    
+    var meters: EKLength.UnitValue.Metric {
+        return .meter(self)
+    }
+    
+    var kilometers: EKLength.UnitValue.Metric {
+        return .kilometer(self)
+    }
+    
+    // MARK: - Imperial values
+    
+    var inches: EKLength.UnitValue.Imperial {
+        return .inch(self)
+    }
+    
+    var feet: EKLength.UnitValue.Imperial {
+        return .foot(self)
+    }
+    
+    var yards: EKLength.UnitValue.Imperial {
+        return .yard(self)
+    }
+    
+    var miles: EKLength.UnitValue.Imperial {
+        return .mile(self)
     }
 }
