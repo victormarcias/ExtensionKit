@@ -36,7 +36,7 @@ struct EKLength {
     enum UnitType {
         
         enum Metric: Double {
-            case milimeters = 1         // mm
+            case millimeters = 1        // mm
             case centimeters = 10       // mm
             case meters = 1000          // mm
             case kilometers = 1_000_000 // mm
@@ -56,7 +56,7 @@ struct EKLength {
     enum UnitValue {
         
         enum Metric {
-            case milimeter(_ value: Double)
+            case millimeter(_ value: Double)
             case centimeter(_ value: Double)
             case meter(_ value: Double)
             case kilometer(_ value: Double)
@@ -66,7 +66,7 @@ struct EKLength {
             ///
             func to(_ metric: UnitType.Metric) -> Double {
                 switch self {
-                case .milimeter(let value),
+                case .millimeter(let value),
                      .centimeter(let value),
                      .meter(let value),
                      .kilometer(let value):
@@ -80,7 +80,7 @@ struct EKLength {
             ///
             func to(_ imperial: UnitType.Imperial) -> Double {
                 switch self {
-                case .milimeter(let value),
+                case .millimeter(let value),
                      .centimeter(let value),
                      .meter(let value),
                      .kilometer(let value):
@@ -95,7 +95,7 @@ struct EKLength {
             ///
             private func unitType() -> UnitType.Metric {
                 switch self {
-                case .milimeter(_):     return .milimeters
+                case .millimeter(_):    return .millimeters
                 case .centimeter(_):    return .centimeters
                 case .meter(_):         return .meters
                 case .kilometer(_):     return .kilometers
@@ -159,7 +159,7 @@ extension Double {
     // MARK: - Metric values
     
     var milimeters: EKLength.UnitValue.Metric {
-        return .milimeter(self)
+        return .millimeter(self)
     }
     
     var centimeters: EKLength.UnitValue.Metric {
