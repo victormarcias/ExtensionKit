@@ -36,17 +36,17 @@ struct EKLength {
     enum UnitType {
         
         enum Metric: Double {
-            case millimeters = 1        // mm
-            case centimeters = 10       // mm
-            case meters = 1000          // mm
-            case kilometers = 1_000_000 // mm
+            case millimeters = 1        // 1 mm
+            case centimeters = 10       // 1 cm = 10 mm
+            case meters = 1000          // 1 m  = 1000 mm
+            case kilometers = 1_000_000 // 1 km = 1_000_000 mm
         }
         
         enum Imperial: Double {
-            case inches = 1     // inch
-            case feet = 12      // inches
-            case yards = 36     // inches
-            case miles = 63360  // inches
+            case inches = 1     // 1 inch
+            case feet = 12      // 1 foot = 12 inches
+            case yards = 36     // 1 yard = 36 inches
+            case miles = 63360  // 1 mile = 63360 inches
         }
     }
     
