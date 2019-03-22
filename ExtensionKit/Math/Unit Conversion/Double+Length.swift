@@ -85,8 +85,8 @@ struct EKLength {
                      .meter(let value),
                      .kilometer(let value):
                     let type = self.unitType()
-                    let milimetersInInches = 0.0393700787
-                    return value * milimetersInInches * type.rawValue / imperial.rawValue
+                    let millimeterToInch = 0.0393700787 // 1 mm = 0.0393701 inches
+                    return value * millimeterToInch * type.rawValue / imperial.rawValue
                 }
             }
             
@@ -133,8 +133,8 @@ struct EKLength {
                      .yard(let value),
                      .mile(let value):
                     let type = self.unitType()
-                    let inchesInMilimeters = 25.4
-                    return value * inchesInMilimeters * type.rawValue / metric.rawValue
+                    let inchToMillimeter = 25.4 // 1 inch = 25.4 mm
+                    return value * inchToMillimeter * type.rawValue / metric.rawValue
                 }
             }
             
