@@ -23,34 +23,34 @@ struct EKTemperature {
     }
     
     enum UnitValue {
-        case celsius(_ value: Double)
-        case farenheit(_ value: Double)
-        case kelvin(_ value: Double)
+        case celsiusValue(_ value: Double)
+        case farenheitValue(_ value: Double)
+        case kelvinValue(_ value: Double)
         
         /// Converts this temperature to another
         ///
         /// - Parameters:
-        ///     - conversionUnit: the resulting value's temperature unit
+        ///     - target: the resulting value's temperature unit
         /// - Returns: the original Double value converted to another temperature's Double value
         ///
-        func to(_ conversionUnit: EKTemperature.UnitType) -> Double {
+        func to(_ target: EKTemperature.UnitType) -> Double {
             switch self {
-            case .celsius(let value):
-                switch conversionUnit {
+            case .celsiusValue(let value):
+                switch target {
                 case .celsius:      return value
                 case .farenheit:    return value * 9/5 + 32
                 case .kelvin:       return value + 273.15
                 }
                 
-            case .farenheit(let value):
-                switch conversionUnit {
+            case .farenheitValue(let value):
+                switch target {
                 case .celsius:      return (value - 32) * 5/9
                 case .kelvin:       return (value - 32) * 5/9 + 273.15
                 case .farenheit:    return value
                 }
                 
-            case .kelvin(let value):
-                switch conversionUnit {
+            case .kelvinValue(let value):
+                switch target {
                 case .celsius:      return value - 273.15
                 case .farenheit:    return (value - 273.15) * 9/5 + 32
                 case .kelvin:       return value
@@ -71,9 +71,9 @@ extension Double {
     ///
     func degrees(_ unit: EKTemperature.UnitType) -> EKTemperature.UnitValue {
         switch unit {
-        case .celsius:      return .celsius(self)
-        case .farenheit:    return .farenheit(self)
-        case .kelvin:       return .kelvin(self)
+        case .celsius:      return .celsiusValue(self)
+        case .farenheit:    return .farenheitValue(self)
+        case .kelvin:       return .kelvinValue(self)
         }
     }
 }
