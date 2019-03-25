@@ -1,6 +1,6 @@
 //
 //  UIDevice+IPAddress.swift
-//  ExtensionKitDemo
+//  ExtensionKit
 //
 //  Created by Victor Marcias on 2019-03-25.
 //  Copyright © 2019 Victor Marcias. All rights reserved.
