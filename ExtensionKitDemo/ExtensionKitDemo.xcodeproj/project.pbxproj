@@ -24,6 +24,7 @@
 		04059E4E224412800063F5F9 /* Double+Temperature_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04059E4C224412800063F5F9 /* Double+Temperature_Tests.swift */; };
 		04059E5022442BED0063F5F9 /* Double+Length.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04059E4F22442BED0063F5F9 /* Double+Length.swift */; };
 		04059E5122442BED0063F5F9 /* Double+Length.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04059E4F22442BED0063F5F9 /* Double+Length.swift */; };
+		042AD04622497CF700E92417 /* UIDevice+IPAddress_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AD04522497CF700E92417 /* UIDevice+IPAddress_Tests.swift */; };
 		04466E7F2249729B0084D8D8 /* UIDevice+IPAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04466E7E2249729B0084D8D8 /* UIDevice+IPAddress.swift */; };
 		04466E802249729B0084D8D8 /* UIDevice+IPAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04466E7E2249729B0084D8D8 /* UIDevice+IPAddress.swift */; };
 		0450899B2236BDB9007F2DAA /* UIView+Frame_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045089972236BDA1007F2DAA /* UIView+Frame_Tests.swift */; };
@@ -62,6 +63,7 @@
 		04059E482243FB1A0063F5F9 /* Double+Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Temperature.swift"; sourceTree = "<group>"; };
 		04059E4C224412800063F5F9 /* Double+Temperature_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Temperature_Tests.swift"; sourceTree = "<group>"; };
 		04059E4F22442BED0063F5F9 /* Double+Length.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Length.swift"; sourceTree = "<group>"; };
+		042AD04522497CF700E92417 /* UIDevice+IPAddress_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+IPAddress_Tests.swift"; sourceTree = "<group>"; };
 		04466E7E2249729B0084D8D8 /* UIDevice+IPAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+IPAddress.swift"; sourceTree = "<group>"; };
 		045089972236BDA1007F2DAA /* UIView+Frame_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame_Tests.swift"; sourceTree = "<group>"; };
 		045089982236BDA1007F2DAA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 		045089952236BDA1007F2DAA /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				042AD04522497CF700E92417 /* UIDevice+IPAddress_Tests.swift */,
 				045089972236BDA1007F2DAA /* UIView+Frame_Tests.swift */,
 			);
 			path = UIKit;
@@ -347,6 +350,7 @@
 			files = (
 				04C7CBC92245299E00B5A8DA /* Double+Length_Tests.swift in Sources */,
 				04059E4E224412800063F5F9 /* Double+Temperature_Tests.swift in Sources */,
+				042AD04622497CF700E92417 /* UIDevice+IPAddress_Tests.swift in Sources */,
 				045F1F60223AE4C90087B804 /* UITableView+Reusable.swift in Sources */,
 				04466E802249729B0084D8D8 /* UIDevice+IPAddress.swift in Sources */,
 				045089A12236E7E5007F2DAA /* String+Crypto_Tests.swift in Sources */,
