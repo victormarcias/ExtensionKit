@@ -33,7 +33,7 @@ struct EKLength {
     ///
     /// UnitType: each one defined by the smallest and scaled up
     ///
-    enum UnitType {
+    struct UnitType {
         
         enum Metric: Double {
             case millimeters = 1        // 1 mm
@@ -53,7 +53,7 @@ struct EKLength {
     ///
     /// UnitValue: the object that wraps the original Double value
     ///
-    enum UnitValue {
+    struct UnitValue {
         
         enum Metric {
             case millimeter(_ value: Double)
