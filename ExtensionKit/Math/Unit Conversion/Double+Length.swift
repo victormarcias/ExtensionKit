@@ -31,6 +31,12 @@ struct EKLength {
     ///
     
     ///
+    /// Conversion Constants
+    ///
+    private static let millimeterToInch = 0.0393700787 // 1 mm = 0.0393701~ inches
+    private static let inchToMillimeter = 25.4         // 1 inch = 25.4 mm
+    
+    ///
     /// UnitType: each one defined by the smallest and scaled up
     ///
     struct UnitType {
@@ -85,7 +91,6 @@ struct EKLength {
                      .meterValue(let value),
                      .kilometerValue(let value):
                     let from = self.valueType()
-                    let millimeterToInch = 0.0393700787 // 1 mm = 0.0393701~ inches
                     return value * millimeterToInch * from.rawValue / target.rawValue
                 }
             }
@@ -133,7 +138,6 @@ struct EKLength {
                      .yardValue(let value),
                      .mileValue(let value):
                     let from = self.valueType()
-                    let inchToMillimeter = 25.4 // 1 inch = 25.4 mm
                     return value * inchToMillimeter * from.rawValue / target.rawValue
                 }
             }
