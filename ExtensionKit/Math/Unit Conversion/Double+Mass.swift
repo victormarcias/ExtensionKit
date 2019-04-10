@@ -158,3 +158,46 @@ struct EKMass {
         }
     }
 }
+
+extension Double {
+    
+    // MARK: - Metric values
+    
+    var miligrams: EKMass.UnitValue.Metric {
+        return .miligramValue(self)
+    }
+
+    var grams: EKMass.UnitValue.Metric {
+        return .gramValue(self)
+    }
+    
+    var kilograms: EKMass.UnitValue.Metric {
+        return .kilogramValue(self)
+    }
+    
+    var tonnes: EKMass.UnitValue.Metric {
+        return .tonneValue(self)
+    }
+    
+    // MARK: - Imperial values
+    
+    var ounces: EKMass.UnitValue.Imperial {
+        return .ounceValue(self)
+    }
+
+    var stones: EKMass.UnitValue.Imperial {
+        return .stoneValue(self)
+    }
+
+    var pounds: EKMass.UnitValue.Imperial {
+        return .poundValue(self)
+    }
+
+    var UStons: EKMass.UnitValue.Imperial {
+        return .UStonValue(self)
+    }
+
+    var tons: EKMass.UnitValue.Imperial {
+        return .tonValue(self)
+    }
+}

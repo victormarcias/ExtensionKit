@@ -24,7 +24,9 @@ class Double_Temperature_Tests: XCTestCase {
         XCTAssertEqual(testValue.degrees(.kelvin).to(.celsius), -243.14999999999998)
         XCTAssertEqual(testValue.degrees(.kelvin).to(.farenheit), -405.66999999999996)
         XCTAssertEqual(testValue.degrees(.kelvin).to(.kelvin), testValue)
-        
+    }
+    
+    func testCommonTemperatures() {
         let absoluteZero = 0.0.degrees(.kelvin)
         XCTAssertEqual(absoluteZero.to(.kelvin), 0.0)
         XCTAssertEqual(absoluteZero.to(.celsius), -273.15)
