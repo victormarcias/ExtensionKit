@@ -32,7 +32,6 @@ class Double_Length_Tests: XCTestCase {
         XCTAssertEqual(testValue.centimeters.to(.yards), 114.46850382025)
         XCTAssertEqual(testValue.centimeters.to(.inches), 4120.866137529)
         XCTAssertEqual(testValue.centimeters.to(.feet), 343.40551146075)
-        XCTAssertEqual(testValue.centimeters.to(.nauticalMiles), 0.05651727842578865)
         
         let smallTestValue = 0.00015
         
