@@ -22,7 +22,7 @@ extension UICollectionView {
     ///
     func registerReusableHeader(_ viewClass: AnyClass) {
         register(viewClass,
-                 forSupplementaryViewOfKind: UICollectionElementKindSectionHeader,
+                 forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
                  withReuseIdentifier: NSStringFromClass(viewClass))
     }
     
@@ -31,7 +31,7 @@ extension UICollectionView {
     ///
     func registerReusableFooter(_ viewClass: AnyClass) {
         register(viewClass,
-                 forSupplementaryViewOfKind: UICollectionElementKindSectionFooter,
+                 forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter,
                  withReuseIdentifier: NSStringFromClass(viewClass))
     }
     
@@ -53,7 +53,7 @@ extension UICollectionView {
     ///
     func dequeueReusableHeader<T: UICollectionReusableView>(_ type: T.Type, for indexPath: IndexPath) -> T {
         let className = NSStringFromClass(T.self)
-        guard let header = self.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: className, for: indexPath) as? T else {
+        guard let header = self.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: className, for: indexPath) as? T else {
             fatalError("Unable to dequeueReusableHeader of class \(className)")
         }
         return header
@@ -65,7 +65,7 @@ extension UICollectionView {
     ///
     func dequeueReusableFooter<T: UICollectionReusableView>(_ type: T.Type, for indexPath: IndexPath) -> T {
         let className = NSStringFromClass(T.self)
-        guard let header = self.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionFooter, withReuseIdentifier: className, for: indexPath) as? T else {
+        guard let header = self.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: className, for: indexPath) as? T else {
             fatalError("Unable to dequeueReusableFooter of class \(className)")
         }
         return header
