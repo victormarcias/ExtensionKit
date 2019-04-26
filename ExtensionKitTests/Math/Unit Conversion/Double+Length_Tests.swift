@@ -10,8 +10,9 @@ import XCTest
 
 class Double_Length_Tests: XCTestCase {
     
-    func testLengthConversion() {
+    func testImperialMetricConversion() {
         let testValue = 10_467.0
+        
         XCTAssertEqual(testValue.meters.to(.kilometers), 10.467)
         XCTAssertEqual(testValue.meters.to(.millimeters), 10_467_000)
         XCTAssertEqual(testValue.meters.to(.centimeters), 1_046_700)
@@ -31,11 +32,22 @@ class Double_Length_Tests: XCTestCase {
         XCTAssertEqual(testValue.centimeters.to(.yards), 114.46850382025)
         XCTAssertEqual(testValue.centimeters.to(.inches), 4120.866137529)
         XCTAssertEqual(testValue.centimeters.to(.feet), 343.40551146075)
+        XCTAssertEqual(testValue.centimeters.to(.nauticalMiles), 0.05651727842578865)
         
         let smallTestValue = 0.00015
+        
         XCTAssertEqual(smallTestValue.milimeters.to(.miles), 9.320567874053028e-11)
         XCTAssertEqual(smallTestValue.miles.to(.millimeters), 241.40159999999997)
         XCTAssertEqual(smallTestValue.inches.to(.meters), 3.8099999999999995e-6)
         XCTAssertEqual(smallTestValue.milimeters.to(.yards), 1.640419945833333e-7)
+    }
+    
+    func testNauticalMiles() {
+        let sut = 1.0
+        
+        XCTAssertEqual(sut.miles.to(.nauticalMiles), 0.868976, accuracy: 0.00001)
+        XCTAssertEqual(sut.nauticalMiles.to(.meters), 1852, accuracy: 0.00001)
+        XCTAssertEqual(sut.nauticalMiles.to(.miles), 1.15078, accuracy: 0.00001)
+        XCTAssertEqual(sut.nauticalMiles.to(.centimeters), 185200.0004, accuracy: 0.0001)
     }
 }

@@ -49,10 +49,11 @@ struct EKLength {
         }
         
         enum Imperial: Double {
-            case inches = 1     // 1 inch
-            case feet = 12      // 1 foot = 12 inches
-            case yards = 36     // 1 yard = 36 inches
-            case miles = 63360  // 1 mile = 63360 inches
+            case inches = 1                 // 1 inch
+            case feet = 12                  // 1 foot = 12 inches
+            case yards = 36                 // 1 yard = 36 inches
+            case miles = 63360              // 1 mile = 63360 inches
+            case nauticalMiles = 72913.386  // 1 nautical mile = 72913,386 inches
         }
     }
     
@@ -113,6 +114,7 @@ struct EKLength {
             case footValue(_ value: Double)
             case yardValue(_ value: Double)
             case mileValue(_ value: Double)
+            case nauticalMileValue(_ value: Double)
             
             ///
             /// Imperial -> Imperial
@@ -122,7 +124,8 @@ struct EKLength {
                 case .inchValue(let value),
                      .footValue(let value),
                      .yardValue(let value),
-                     .mileValue(let value):
+                     .mileValue(let value),
+                     .nauticalMileValue(let value):
                     let from = self.valueType()
                     return value * from.rawValue / target.rawValue
                 }
@@ -136,7 +139,8 @@ struct EKLength {
                 case .inchValue(let value),
                      .footValue(let value),
                      .yardValue(let value),
-                     .mileValue(let value):
+                     .mileValue(let value),
+                     .nauticalMileValue(let value):
                     let from = self.valueType()
                     return value * inchToMillimeter * from.rawValue / target.rawValue
                 }
@@ -151,6 +155,7 @@ struct EKLength {
                 case .footValue(_): return .feet
                 case .yardValue(_): return .yards
                 case .mileValue(_): return .miles
+                case .nauticalMileValue(_): return .nauticalMiles
                 }
             }
         }
@@ -193,5 +198,9 @@ extension Double {
     
     var miles: EKLength.UnitValue.Imperial {
         return .mileValue(self)
+    }
+    
+    var nauticalMiles: EKLength.UnitValue.Imperial {
+        return .nauticalMileValue(self)
     }
 }
