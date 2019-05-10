@@ -47,4 +47,11 @@ class Double_Mass_Tests: XCTestCase {
         XCTAssertEqual(testValue.kilograms.to(.tons), 0.09842065320870536)
         XCTAssertEqual(testValue.kilograms.to(.UStons), 0.11023113159374999)
     }
+    
+    func testMorgansLogic() {
+        let tsValue = 1.0
+        let morgansValue = 3000.0
+        
+        XCTAssert(morgansValue.pounds.to(.pounds) > tsValue.UStons.to(.pounds))
+    }
 }
