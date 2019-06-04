@@ -1,5 +1,5 @@
 //
-//  UIEdgeInsets+Sugar_Tests.swift
+//  UIEdgeInsets+Operators_Tests.swift
 //  ExtensionKitTests
 //
 //  Created by Victor Marcias on 2019-04-26.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class UIEdgeInsets_Sugar_Tests: XCTestCase {
+class UIEdgeInsets_Operators_Tests: XCTestCase {
     
     func testEdgeInsetsHelpers() {
         let sut = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)

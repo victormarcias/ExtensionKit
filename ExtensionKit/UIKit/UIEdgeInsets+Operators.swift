@@ -1,5 +1,5 @@
 //
-//  UIEdgeInsets+Sugar.swift
+//  UIEdgeInsets+Operators.swift
 //  ExtensionKit
 //
 //  Created by Victor Marcias on 2019-03-07.

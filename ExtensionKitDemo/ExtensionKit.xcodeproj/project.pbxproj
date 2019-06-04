@@ -13,8 +13,8 @@
 		0400BA2D223195570063D355 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0400BA2B223195570063D355 /* LaunchScreen.storyboard */; };
 		0400BA4F2231AC590063D355 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA4E2231AC590063D355 /* UICollectionView+Reusable.swift */; };
 		0400BA502231AC590063D355 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA4E2231AC590063D355 /* UICollectionView+Reusable.swift */; };
-		0400BA532231ADC30063D355 /* UIEdgeInsets+Sugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA522231ADC30063D355 /* UIEdgeInsets+Sugar.swift */; };
-		0400BA542231ADC30063D355 /* UIEdgeInsets+Sugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA522231ADC30063D355 /* UIEdgeInsets+Sugar.swift */; };
+		0400BA532231ADC30063D355 /* UIEdgeInsets+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA522231ADC30063D355 /* UIEdgeInsets+Operators.swift */; };
+		0400BA542231ADC30063D355 /* UIEdgeInsets+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA522231ADC30063D355 /* UIEdgeInsets+Operators.swift */; };
 		0400BA572231B5270063D355 /* Int+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA562231B5270063D355 /* Int+Time.swift */; };
 		0400BA582231B5270063D355 /* Int+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA562231B5270063D355 /* Int+Time.swift */; };
 		0400BA5B2231BF9D0063D355 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400BA5A2231BF9D0063D355 /* UIView+Frame.swift */; };
@@ -39,7 +39,7 @@
 		045F1F62223AF6CD0087B804 /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F1F61223AF6CD0087B804 /* UIImage+Resize.swift */; };
 		047748672238430600846F57 /* Int+Time_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047748662238430500846F57 /* Int+Time_Tests.swift */; };
 		04C7CBC92245299E00B5A8DA /* Double+Length_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7CBC82245299E00B5A8DA /* Double+Length_Tests.swift */; };
-		6DCA72CD22730ABF00B9424F /* UIEdgeInsets+Sugar_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCA72CC22730ABF00B9424F /* UIEdgeInsets+Sugar_Tests.swift */; };
+		6DCA72CD22730ABF00B9424F /* UIEdgeInsets+Operators_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCA72CC22730ABF00B9424F /* UIEdgeInsets+Operators_Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +61,7 @@
 		0400BA2E223195570063D355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0400BA33223195580063D355 /* ExtensionKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtensionKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0400BA4E2231AC590063D355 /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
-		0400BA522231ADC30063D355 /* UIEdgeInsets+Sugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Sugar.swift"; sourceTree = "<group>"; };
+		0400BA522231ADC30063D355 /* UIEdgeInsets+Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Operators.swift"; sourceTree = "<group>"; };
 		0400BA562231B5270063D355 /* Int+Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Time.swift"; sourceTree = "<group>"; };
 		0400BA5A2231BF9D0063D355 /* UIView+Frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
 		04059E482243FB1A0063F5F9 /* Double+Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Temperature.swift"; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 		045F1F61223AF6CD0087B804 /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
 		047748662238430500846F57 /* Int+Time_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Time_Tests.swift"; sourceTree = "<group>"; };
 		04C7CBC82245299E00B5A8DA /* Double+Length_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Length_Tests.swift"; sourceTree = "<group>"; };
-		6DCA72CC22730ABF00B9424F /* UIEdgeInsets+Sugar_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Sugar_Tests.swift"; sourceTree = "<group>"; };
+		6DCA72CC22730ABF00B9424F /* UIEdgeInsets+Operators_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Operators_Tests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +147,7 @@
 			children = (
 				0400BA4E2231AC590063D355 /* UICollectionView+Reusable.swift */,
 				04466E7E2249729B0084D8D8 /* UIDevice+IPAddress.swift */,
-				0400BA522231ADC30063D355 /* UIEdgeInsets+Sugar.swift */,
+				0400BA522231ADC30063D355 /* UIEdgeInsets+Operators.swift */,
 				045F1F61223AF6CD0087B804 /* UIImage+Resize.swift */,
 				045F1F5A223ADF0E0087B804 /* UITableView+Reusable.swift */,
 				0400BA5A2231BF9D0063D355 /* UIView+Frame.swift */,
@@ -208,7 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				042AD04522497CF700E92417 /* UIDevice+IPAddress_Tests.swift */,
-				6DCA72CC22730ABF00B9424F /* UIEdgeInsets+Sugar_Tests.swift */,
+				6DCA72CC22730ABF00B9424F /* UIEdgeInsets+Operators_Tests.swift */,
 				045089972236BDA1007F2DAA /* UIView+Frame_Tests.swift */,
 			);
 			path = UIKit;
@@ -342,7 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0400BA4F2231AC590063D355 /* UICollectionView+Reusable.swift in Sources */,
-				0400BA532231ADC30063D355 /* UIEdgeInsets+Sugar.swift in Sources */,
+				0400BA532231ADC30063D355 /* UIEdgeInsets+Operators.swift in Sources */,
 				04059E5022442BED0063F5F9 /* Double+Length.swift in Sources */,
 				04466E7F2249729B0084D8D8 /* UIDevice+IPAddress.swift in Sources */,
 				0437CD09225918AD006659A9 /* Double+Mass.swift in Sources */,
@@ -368,11 +368,11 @@
 				04466E802249729B0084D8D8 /* UIDevice+IPAddress.swift in Sources */,
 				045089A12236E7E5007F2DAA /* String+Crypto_Tests.swift in Sources */,
 				0437CD0A225918AD006659A9 /* Double+Mass.swift in Sources */,
-				0400BA542231ADC30063D355 /* UIEdgeInsets+Sugar.swift in Sources */,
+				0400BA542231ADC30063D355 /* UIEdgeInsets+Operators.swift in Sources */,
 				04059E4A2243FB1A0063F5F9 /* Double+Temperature.swift in Sources */,
 				0400BA5C2231BF9D0063D355 /* UIView+Frame.swift in Sources */,
 				0400BA582231B5270063D355 /* Int+Time.swift in Sources */,
-				6DCA72CD22730ABF00B9424F /* UIEdgeInsets+Sugar_Tests.swift in Sources */,
+				6DCA72CD22730ABF00B9424F /* UIEdgeInsets+Operators_Tests.swift in Sources */,
 				0400BA502231AC590063D355 /* UICollectionView+Reusable.swift in Sources */,
 				0450899B2236BDB9007F2DAA /* UIView+Frame_Tests.swift in Sources */,
 				047748672238430600846F57 /* Int+Time_Tests.swift in Sources */,
