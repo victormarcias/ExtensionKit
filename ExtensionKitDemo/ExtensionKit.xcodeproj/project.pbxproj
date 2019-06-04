@@ -39,6 +39,7 @@
 		045F1F62223AF6CD0087B804 /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F1F61223AF6CD0087B804 /* UIImage+Resize.swift */; };
 		047748672238430600846F57 /* Int+Time_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047748662238430500846F57 /* Int+Time_Tests.swift */; };
 		04C7CBC92245299E00B5A8DA /* Double+Length_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7CBC82245299E00B5A8DA /* Double+Length_Tests.swift */; };
+		6D652E1522A69A22005F102D /* MKMapView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D652E1422A69A22005F102D /* MKMapView+Reusable.swift */; };
 		6DCA72CD22730ABF00B9424F /* UIEdgeInsets+Operators_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCA72CC22730ABF00B9424F /* UIEdgeInsets+Operators_Tests.swift */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,7 @@
 		045F1F61223AF6CD0087B804 /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
 		047748662238430500846F57 /* Int+Time_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Time_Tests.swift"; sourceTree = "<group>"; };
 		04C7CBC82245299E00B5A8DA /* Double+Length_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Length_Tests.swift"; sourceTree = "<group>"; };
+		6D652E1422A69A22005F102D /* MKMapView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Reusable.swift"; sourceTree = "<group>"; };
 		6DCA72CC22730ABF00B9424F /* UIEdgeInsets+Operators_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Operators_Tests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				0400BA5D2231D8260063D355 /* Crypto */,
+				6D652E1622A69A43005F102D /* MapKit */,
 				0400BA552231B5170063D355 /* Math */,
 				0400BA4C2231AC590063D355 /* UIKit */,
 			);
@@ -237,6 +240,14 @@
 				047748662238430500846F57 /* Int+Time_Tests.swift */,
 			);
 			path = Math;
+			sourceTree = "<group>";
+		};
+		6D652E1622A69A43005F102D /* MapKit */ = {
+			isa = PBXGroup;
+			children = (
+				6D652E1422A69A22005F102D /* MKMapView+Reusable.swift */,
+			);
+			path = MapKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,6 +361,7 @@
 				04059E492243FB1A0063F5F9 /* Double+Temperature.swift in Sources */,
 				0450899D2236D6D2007F2DAA /* String+Crypto.swift in Sources */,
 				0400BA572231B5270063D355 /* Int+Time.swift in Sources */,
+				6D652E1522A69A22005F102D /* MKMapView+Reusable.swift in Sources */,
 				045F1F62223AF6CD0087B804 /* UIImage+Resize.swift in Sources */,
 				0400BA25223195540063D355 /* ViewController.swift in Sources */,
 				0400BA23223195540063D355 /* AppDelegate.swift in Sources */,
