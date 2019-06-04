@@ -10,7 +10,18 @@ The motivation behind this set of Extensions is to have a very modular list of h
 
 ## Pod
 To install all extensions as a Pod use:
+
+#### Swift 4.0
+```ruby
+pod 'ExtensionKit', :git => 'https://github.com/victormarcias/ExtensionKit.git', :tag => '0.1.0'
 ```
-pod 'ExtensionKit', :git => 'https://github.com/victormarcias/ExtensionKit.git', :tag => 'master'
+#### Swift 4.2
+```ruby
+pod 'ExtensionKit', :git => 'https://github.com/victormarcias/ExtensionKit.git', :tag => '0.1.2'
 ```
-Use 'master' for the latest release or specify the version you want.
+
+Or use 'master' for the latest release or specify the version you want.
+
+```ruby
+pod 'ExtensionKit', :git => 'https://github.com/victormarcias/ExtensionKit.git', :branch => 'master'
+```
