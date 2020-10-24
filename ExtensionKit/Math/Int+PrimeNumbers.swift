@@ -16,10 +16,12 @@ extension Int {
     static func primeNumbers(in range: ClosedRange<Int>) -> [Int] {
         let primes = Array(range)
             .filter { $0 > 1 }                  // filter negatives, zero, one
-            .filter { $0 % 2 != 0 || $0 == 2 }  // filter even numbers
-            .filter { $0 % 3 != 0 || $0 == 3 }  // filter multiples of 3
-            .filter { $0 % 5 != 0 || $0 == 5 }  // filter multiples of 5
-            .filter { $0 % 7 != 0 || $0 == 7 }  // filter multiples of 7
+            .filter {
+                ($0 % 2 != 0 || $0 == 2) &&     // filter even numbers
+                ($0 % 3 != 0 || $0 == 3) &&     // filter multiples of 3
+                ($0 % 5 != 0 || $0 == 5) &&     // filter multiples of 5
+                ($0 % 7 != 0 || $0 == 7)        // filter multiples of 7
+            }
         
         return primes
     }

@@ -20,5 +20,9 @@ class Int_PrimeNumbers_Tests: XCTestCase {
     func test_first25() {
         let sut = Int.primeNumbers(in: 1...100)
         XCTAssert(sut.count == 25)
+        
+        for (i, _) in sut.enumerated() {
+            XCTAssert(sut[i] == first25[i])
+        }
     }
 }
