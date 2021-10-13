@@ -19,6 +19,10 @@ pod 'ExtensionKit', :git => 'https://github.com/victormarcias/ExtensionKit.git',
 ```ruby
 pod 'ExtensionKit', :git => 'https://github.com/victormarcias/ExtensionKit.git', :tag => '0.1.2'
 ```
+#### Swift 5.0
+```ruby
+pod 'ExtensionKit', :git => 'https://github.com/victormarcias/ExtensionKit.git', :tag => '0.5.0'
+```
 
 Or use 'master' for the latest release or specify the version you want.
 
