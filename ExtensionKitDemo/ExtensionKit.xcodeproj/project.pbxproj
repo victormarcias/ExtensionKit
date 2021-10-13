@@ -315,11 +315,11 @@
 				TargetAttributes = {
 					0400BA1E223195540063D355 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1300;
 					};
 					0400BA32223195580063D355 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1300;
 						TestTargetID = 0400BA1E223195540063D355;
 					};
 				};
@@ -557,7 +557,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.victormarcias.ExtensionKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -578,7 +578,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.victormarcias.ExtensionKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -598,7 +598,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.victormarcias.ExtensionKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExtensionKitDemo.app/ExtensionKitDemo";
 			};
@@ -619,7 +619,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.victormarcias.ExtensionKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExtensionKitDemo.app/ExtensionKitDemo";
 			};
