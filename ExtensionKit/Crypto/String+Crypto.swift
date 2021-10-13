@@ -78,7 +78,7 @@ extension Data {
         var digest = Data(count: Int(type.length))
         
         // generate hash using specified hash type
-        _ = digest.withUnsafeMutableBytes { (digestBytes: UnsafeMutablePointer<UInt8>) in
+		digest.withUnsafeMutableBytes { (digestBytes: UnsafeMutablePointer<UInt8>) in
             self.withUnsafeBytes { (messageBytes: UnsafePointer<UInt8>) in
                 let length = CC_LONG(self.count)
                 switch type {
@@ -108,7 +108,7 @@ public extension String {
     ///   - type: The type of hash to use.
     ///   - output: The type of output desired, defaults to .hex.
     /// - Returns: The requested hash output or nil if failure.
-    public func hashed(_ type: Data.HashType, output: Data.HashOutputType = .hex) -> String? {
+    func hashed(_ type: Data.HashType, output: Data.HashOutputType = .hex) -> String? {
         
         // convert string to utf8 encoded data
         guard let message = data(using: .utf8) else { return nil }
